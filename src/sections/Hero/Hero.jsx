@@ -42,7 +42,7 @@ function Hero() {
             <img src={githubIcon} alt="github Icon" />
           </a>
         </span>
-        <p>
+        <p className={styles.description}>
           Passionate IT graduate dedicated to crafting innovative solutions
           through coding mastery and creative problem-solving.
         </p>
