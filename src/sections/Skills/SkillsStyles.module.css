@@ -2,16 +2,16 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-}
 
-span {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
+  span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
 
-img {
-  width: 20px;
+  img {
+    width: 20px;
+  }
 }
 
 .skillList {
@@ -29,4 +29,18 @@ hr {
   border: none;
   background-color: var(--text-color);
   margin: 30px auto;
+}
+
+@media (width >= 800px) {
+  .skillList {
+    max-width: fit-content;
+    gap: 30px;
+    p {
+      font-size: 20px;
+    }
+  }
+
+  hr {
+    width: 300px;
+  }
 }

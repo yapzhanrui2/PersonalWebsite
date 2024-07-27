@@ -6,6 +6,8 @@ import linkedInIconLight from "../../assets/linkedin-light.svg";
 import linkedInIconDark from "../../assets/linkedin-dark.svg";
 import githubIconLight from "../../assets/github-light.svg";
 import githubIconDark from "../../assets/github-dark.svg";
+import emailIconLight from "../../assets/email-light.png";
+import emailIconDark from "../../assets/email-dark.png";
 import CV from "../../assets/ZhanRui_Yap_Resume.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
@@ -14,7 +16,8 @@ function Hero() {
 
   const themeIcon = theme === "light" ? themeSunIcon : themeMoonIcon;
   const linkedInIcon = theme === "light" ? linkedInIconLight : linkedInIconDark;
-  const githubIcon = theme == "light" ? githubIconLight : githubIconDark;
+  const githubIcon = theme === "light" ? githubIconLight : githubIconDark;
+  const emailIcon = theme === "light" ? emailIconLight : emailIconDark;
 
   return (
     <section id="hero" className={styles.container}>
@@ -31,7 +34,7 @@ function Hero() {
         <h1>
           Zhan Rui
           <br />
-          Yap
+          Yap (Ray)
         </h1>
         <h2>Developer</h2>
         <span>
@@ -40,6 +43,9 @@ function Hero() {
           </a>
           <a href="https://github.com/" target="_blank">
             <img src={githubIcon} alt="github Icon" />
+          </a>
+          <a href="mailto:yapzhanrui@outlook.com" target="_blank">
+            <img src={emailIcon} alt="github Icon" />
           </a>
         </span>
         <p className={styles.description}>
